@@ -7,4 +7,15 @@ document.addEventListener("click", () => {
     } else{ 
         tekst.innerText = "Welk geluid maakt ome faap?";
     }
+    function randomColor() {
+    return "#" + Math.floor(Math.random()*16777215).toString(16);
+    }
+        
+    
+    const all = document.querySelectorAll("*");
+    all.forEach(el => {
+    el.style.color =randomColor ();
+
+    });
 });
+
